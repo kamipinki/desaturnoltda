@@ -1,0 +1,28 @@
+<script language="javascript">
+function valida_envia(){
+    //valida el nombre
+    if (document.formulariodecontacto.nombre.value.length==0){
+          alert("Tiene que ingresar Nombre")
+          document.formulariodecontacto.nombre.focus()
+          return false;
+    }
+         
+        if (document.formulariodecontacto.correoelectronico.value.length==0){
+          alert("Tiene que ingresar correo")
+          document.formjava.correoelectronico.focus()
+          return false;
+    }
+    if (document.formulariodecontacto.telefono.value.length==0){
+          alert("Tiene que ingresar telefono")
+          document.formjava.telefono.focus()
+          return false;
+    }
+    if (document.formulariodecontacto.mensaje.value.length==0){
+          alert("Tiene que ingresar mensaje")
+          document.formjava.mensaje.focus()
+          return false;
+    }
+
+    document.formulariodecontacto.submit();
+}
+</script>
